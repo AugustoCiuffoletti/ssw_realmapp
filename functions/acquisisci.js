@@ -15,6 +15,6 @@ exports = function(payload, response) {
       return t;
     })
     .catch(error => {
-      return "Errore! " + error;
+      return "Errore: " + error;
     });
 };
