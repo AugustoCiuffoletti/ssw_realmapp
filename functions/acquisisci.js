@@ -12,6 +12,7 @@ exports = function(payload, response) {
                 { nome: n }, 
                 { "$set": { temperatura: t } }, 
                 { "upsert": true });
+      return t;
     })
     .catch(error => {
       return "Errore: " + error;
